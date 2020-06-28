@@ -1342,3 +1342,83 @@ Processing by Api::V1::ProjectsController#index as */*
 Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1631)
 
 
+Started POST "/api/v1/contacts" for ::1 at 2020-06-28 13:21:08 -0400
+Processing by Api::V1::ContactsController#create as */*
+  Parameters: {"first_name"=>"Emily", "last_name"=>"Stine", "email"=>"emilystinemusic@gmail.com", "message"=>"Hi Triona, I love you and I'm so proud of all your hard work!", "contact"=>{"first_name"=>"Emily", "last_name"=>"Stine", "email"=>"emilystinemusic@gmail.com", "message"=>"Hi Triona, I love you and I'm so proud of all your hard work!"}}
+[31mUnpermitted parameter: :contact[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/contacts_controller.rb:9:in `create'
+  [1m[36mContact Create (6.1ms)[0m  [1m[32mINSERT INTO "contacts" ("first_name", "last_name", "email", "message", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Emily"], ["last_name", "Stine"], ["email", "emilystinemusic@gmail.com"], ["message", "Hi Triona, I love you and I'm so proud of all your hard work!"], ["created_at", "2020-06-28 17:21:08.323336"], ["updated_at", "2020-06-28 17:21:08.323336"]]
+  ↳ app/controllers/api/v1/contacts_controller.rb:9:in `create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/contacts_controller.rb:9:in `create'
+  Rendering user_mailer/user_mailer.html.erb within layouts/mailer
+  Rendered user_mailer/user_mailer.html.erb within layouts/mailer (Duration: 4.8ms | Allocations: 181)
+  Rendering user_mailer/user_mailer.text.erb within layouts/mailer
+  Rendered user_mailer/user_mailer.text.erb within layouts/mailer (Duration: 2.1ms | Allocations: 84)
+UserMailer#user_mailer: processed outbound mail in 34.8ms
+Delivered mail 5ef8d1846257b_1491d3ff41566862411277@Trionas-MBP.mail (1487.7ms)
+Date: Sun, 28 Jun 2020 13:21:08 -0400
+From: tmoynihancontact@gmail.com
+To: trionamoynihan@gmail.com
+Message-ID: <5ef8d1846257b_1491d3ff41566862411277@Trionas-MBP.mail>
+Subject: New Message from your Portfolio site!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ef8d1846106c_1491d3ff41566862411126";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ef8d1846106c_1491d3ff41566862411126
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+UserMailer#user_mailer
+
+hello, find me in 
+app/views/app/views/user_mailer/user_mailer.text.erb
+
+----==_mimepart_5ef8d1846106c_1491d3ff41566862411126
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>OOooOoOooOo a new message!</h1>
+    <p>
+      First Name: Emily<br>
+      Last Name: Stine<br>
+      Email: emilystinemusic@gmail.com<br>
+      Message: Hi Triona, I love you and I&#39;m so proud of all your hard work!
+      <br>
+      <br>
+      <br>
+    </p>
+    <p>Keep up the good work!</p>
+  </body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_5ef8d1846106c_1491d3ff41566862411126--
+
+Completed 200 OK in 1583ms (Views: 2.1ms | ActiveRecord: 8.7ms | Allocations: 10132)
+
+
