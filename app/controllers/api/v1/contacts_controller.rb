@@ -6,8 +6,20 @@ class Api::V1::ContactsController < ApplicationController
     end
 
     def create 
-        contact = Contact.create!(contact_params)
-        render json: contact  
+        @contact = Contact.create!(contact_params)
+        render json: contact 
+        
+        respond_to do |format|
+            if @contact.save
+              # Tell the UserMailer to send a welcome email after save
+              UserMailer.with(user: @contact).welcome_email.deliver_later
+       
+            #   format.html { redirect_to(@user, notice: 'User was successfully created.') }
+            #   format.json { render json: @user, status: :created, location: @user }
+            end
+          end
+
+
     end
 
     def update
