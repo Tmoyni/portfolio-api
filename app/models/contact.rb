@@ -1,2 +1,3 @@
-class Api::V1::Contact < ApplicationRecord
+class Contact < ApplicationRecord
+
 end
