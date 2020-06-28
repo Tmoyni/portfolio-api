@@ -1314,3 +1314,31 @@ Content-Transfer-Encoding: 7bit
 Completed 200 OK in 1443ms (Views: 0.5ms | ActiveRecord: 14.7ms | Allocations: 26100)
 
 
+Started GET "/api/v1/projects" for ::1 at 2020-06-28 12:53:16 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (2.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+Completed 200 OK in 62ms (Views: 41.6ms | ActiveRecord: 18.0ms | Allocations: 8235)
+
+
+Started GET "/api/v1/projects" for ::1 at 2020-06-28 12:53:16 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 1.0ms | Allocations: 1613)
+
+
+Started GET "/api/v1/projects" for ::1 at 2020-06-28 12:53:22 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 1.1ms | Allocations: 1631)
+
+
+Started GET "/api/v1/projects" for ::1 at 2020-06-28 12:53:23 -0400
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms | Allocations: 1631)
+
+
