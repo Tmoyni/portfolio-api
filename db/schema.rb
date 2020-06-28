@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_06_28_023233) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "api_v1_contacts", force: :cascade do |t|
+  create_table "contacts", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.string "email"
