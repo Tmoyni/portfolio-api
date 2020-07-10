@@ -6,6 +6,55 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+portfolio = = Project.create(
+    image: "Portfolio",
+    name: "My Portfolio Site",
+    details: "Built with a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. Features a Ruby on Rails with Action Mailer that handles emailing forwarding from the contact form. Deployed with Heroku.",
+    tech: "HTML, CSS, React, Ruby on Rails API, Heroku, Postgres",
+    url: "https://www.trionamoynihan.dev",
+    github: "https://github.com/Tmoyni/Portfolio"),
+
+post_manager = Project.create(
+    image: "PostManager",
+    name: "Post Manager",
+    details: "A React Redux web application that helps track and view projects and files for agency social media campaigns. Utilizes a custom database schema and REST API with ActiveRecord, Ruby on Rails and Postgres. Integrated Dropbox SDK for image file management. Utilized React, Redux, and Material UI for the frontend User Interface. Frontend deployed with Netlify and backend deployed with Heroku.",
+    tech: "HTML, Material UI, React, Redux, Ruby on Rails API, Dropbox SDK, Heroku, Netlify, Postgres",
+    url: "https://postmanager.netlify.app",
+    github: "https://github.com/Tmoyni/project-manager-frontend"),
+
+natours = Project.create(
+    image: "Natours",
+    name: "Natours",
+    details: "Natours is a website for a nature tourism company built with HTML and CSS. It was the first project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass'. It was a great way to learn how to built out a project utilizing SASS and advanced CSS techniques like animations and pure CSS popups.",
+    tech: "HTML, CSS, SASS",
+    url: "https://tmoyni.github.io/Natours/",
+    github: "https://github.com/Tmoyni/Natours"),
+
+trillo = Project.create(
+    image: "Trillo",
+    name: "Trillo",
+    details: "Trillo is a travel site and the second project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass.' This project delved into the finer points of Flexbox and worked on more even advanced CSS techniques.It also covered topics like responsive design and how to manage media queries in CSS.",
+    tech: "HTML, CSS, SASS, Flexbox",
+    url: "https://tmoyni.github.io/Trillo/",
+    github: "https://github.com/Tmoyni/Trillo"),
+
+nexter = Project.create(
+    image: "Nexter",
+    name: "Nexter",
+    details: "Nexter is real estate website and the third and final project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass.' This site utilizes a custom CSS grid.",
+    tech: "HTML, CSS, SASS, Flexbox, CSS Grid",
+    url: "https://tmoyni.github.io/Nexter/",
+    github: "https://github.com/Tmoyni/Nexter"),
+
+fantasy_stocks = Project.create(
+    image: "FantasyStocks",
+    name: "Fantasy Stocks",
+    details: "A Ruby on Rails multi-page application for buying and selling portfolios of stocks with fake money. Utilizes a Ruby on Rails backend RESTful API with ActiveRecord and Sqlite3. Implemented Bootstrap for the frontend User Interface implements.",
+    tech: "Ruby on Rails, HTML, CSS, Bootstrap, SQLite3",
+    url: "https://www.youtube.com/watch?v=iEuzsy7q1Vo",
+    github: "https://github.com/Tmoyni/Fantasy-Stocks-1")
+
+
 # natours = Project.create(image: "https://harryle.com/src/img/8-natours1.jpg",
 #     name: "Natours",
 #     details: "Natours is a website for a nature tourism company built with HTML and CSS. It was the first project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass'. It was a great way to learn how to built out a project utilizing SASS and advanced CSS techniques like animations and pure CSS popups.",
@@ -38,4 +87,4 @@
 # url: "https://www.youtube.com/watch?v=iEuzsy7q1Vo",
 # github: "https://github.com/Tmoyni/Fantasy-Stocks-1")
 
-Contact.create(first_name: 'Luke', last_name: 'skywalker', message: 'hi', email: 'star@wars.com')
+# Contact.create(first_name: 'Luke', last_name: 'skywalker', message: 'hi', email: 'star@wars.com')
