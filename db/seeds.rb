@@ -13,7 +13,6 @@ portfolio = = Project.create(
     tech: "HTML, CSS, React, Ruby on Rails API, Heroku, Postgres",
     url: "https://www.trionamoynihan.dev",
     github: "https://github.com/Tmoyni/Portfolio"),
-
 post_manager = Project.create(
     image: "PostManager",
     name: "Post Manager",
@@ -21,7 +20,6 @@ post_manager = Project.create(
     tech: "HTML, Material UI, React, Redux, Ruby on Rails API, Dropbox SDK, Heroku, Netlify, Postgres",
     url: "https://postmanager.netlify.app",
     github: "https://github.com/Tmoyni/project-manager-frontend"),
-
 natours = Project.create(
     image: "Natours",
     name: "Natours",
@@ -29,7 +27,6 @@ natours = Project.create(
     tech: "HTML, CSS, SASS",
     url: "https://tmoyni.github.io/Natours/",
     github: "https://github.com/Tmoyni/Natours"),
-
 trillo = Project.create(
     image: "Trillo",
     name: "Trillo",
@@ -37,7 +34,6 @@ trillo = Project.create(
     tech: "HTML, CSS, SASS, Flexbox",
     url: "https://tmoyni.github.io/Trillo/",
     github: "https://github.com/Tmoyni/Trillo"),
-
 nexter = Project.create(
     image: "Nexter",
     name: "Nexter",
@@ -45,7 +41,6 @@ nexter = Project.create(
     tech: "HTML, CSS, SASS, Flexbox, CSS Grid",
     url: "https://tmoyni.github.io/Nexter/",
     github: "https://github.com/Tmoyni/Nexter"),
-
 fantasy_stocks = Project.create(
     image: "FantasyStocks",
     name: "Fantasy Stocks",
