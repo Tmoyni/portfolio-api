@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-portfolio = = Project.create(
+portfolio = Project.create(
     image: "Portfolio",
     name: "My Portfolio Site",
     details: "Built with a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. Features a Ruby on Rails with Action Mailer that handles emailing forwarding from the contact form. Deployed with Heroku.",
