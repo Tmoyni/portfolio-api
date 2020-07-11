@@ -10,8 +10,8 @@ Project.destroy_all
 
 
 portfolio = Project.create(image: "https://www.trionamoynihan.dev/static/media/Portfolio.fa3ddcb9.jpg",
-    name: "My Portfolio Site",
-    details: "Built with a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. Features a Ruby on Rails with Action Mailer that handles emailing forwarding from the contact form. Deployed with Heroku.",
+    name: "TrionaMoynihan.dev",
+    details: "I built this site using a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. It features a Ruby on Rails backend with Action Mailer that handles email forwarding from the contact form. It was deployed with Heroku.",
     tech: "HTML, CSS, React, Ruby on Rails API, Heroku, Postgres",
     url: "https://www.trionamoynihan.dev",
     github: "https://github.com/Tmoyni/Portfolio"),
@@ -41,7 +41,7 @@ nexter = Project.create(image: "https://www.trionamoynihan.dev/static/media/Next
     github: "https://github.com/Tmoyni/Nexter"),
 fantasy_stocks = Project.create(image: "https://www.trionamoynihan.dev/static/media/FantasyStocks.dbc47302.png",
     name: "Fantasy Stocks",
-    details: "A Ruby on Rails multi-page application for buying and selling portfolios of stocks with fake money. Utilizes a Ruby on Rails backend RESTful API with ActiveRecord and Sqlite3. Implemented Bootstrap for the frontend User Interface implements.",
+    details: "A Ruby on Rails multi-page application for buying and selling portfolios of stocks with fake money. Utilizes a Ruby on Rails backend RESTful API with ActiveRecord and Sqlite3. Implemented Bootstrap for the frontend User Interface elements.",
     tech: "Ruby on Rails, HTML, CSS, Bootstrap, SQLite3",
     url: "https://www.youtube.com/watch?v=iEuzsy7q1Vo",
     github: "https://github.com/Tmoyni/Fantasy-Stocks-1")
