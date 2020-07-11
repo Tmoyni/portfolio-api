@@ -23,7 +23,7 @@ post_manager = Project.create(image: "https://www.trionamoynihan.dev/static/medi
     github: "https://github.com/Tmoyni/project-manager-frontend"),
 natours = Project.create(image: "https://www.trionamoynihan.dev/static/media/Natours.a74d7827.jpg",
     name: "Natours",
-    details: "Natours is a website for a nature tourism company built with HTML and CSS. It was the first project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass'. It was a great way to learn how to built out a project utilizing SASS and advanced CSS techniques like animations and pure CSS popups.",
+    details: "Natours is a website for a nature tourism company built with HTML and CSS. It was the first project from Jonas Schmedtmann's Udemy Course 'Advanced CSS and Sass'. It was a great way to learn how to build out a project utilizing SASS and advanced CSS techniques like animations and pure CSS popups.",
     tech: "HTML, CSS, SASS",
     url: "https://tmoyni.github.io/Natours/",
     github: "https://github.com/Tmoyni/Natours"),
