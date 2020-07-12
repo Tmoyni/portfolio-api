@@ -8,7 +8,6 @@
 
 Project.destroy_all
 
-%PUBLIC_URL%/favicon.ico
 portfolio = Project.create(image: "%PUBLIC_URL%/images/Portfolio.jpg",
     name: "TrionaMoynihan.dev",
     details: "I built this site using a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. It features a Ruby on Rails backend with Action Mailer that handles email forwarding from the contact form. It was deployed with Heroku.",
