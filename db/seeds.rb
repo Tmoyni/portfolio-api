@@ -8,7 +8,7 @@
 
 Project.destroy_all
 
-portfolio = Project.create(image: "hhttps://i.imgur.com/anOe2w9.png",
+portfolio = Project.create(image: "https://i.imgur.com/anOe2w9.png",
     name: "TrionaMoynihan.dev",
     details: "I built this site using a React frontend and custom CSS User Interface elements, including CSS Grid, Flexbox and CSS animations. It features a Ruby on Rails backend with Action Mailer that handles email forwarding from the contact form. It was deployed with Heroku.",
     tech: "HTML, CSS, React, Ruby on Rails API, Heroku, Postgres",
